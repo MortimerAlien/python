@@ -2,7 +2,6 @@
 import numpy as np
 
 class Point:
-    """Documentation"""
     
     def __init__(self, x, y, z):
         """
