@@ -24,27 +24,34 @@ class Point:
         """
         opérateurs d'additions'
         """
-        return Point(self.x + other.x,
-                     self.y + other.y,
-                     self.z + other.z)
+        self.x += other.x
+        self.y += other.y
+        self.z += other.z
+        
+        return self
     
     
     def __sub__(self, other):
         """
         opérateurs de soustraction
         """
-        return Point(self.x - other.x,
-                     self.y - other.y,
-                     self.z - other.z)
+        self.x -= other.x
+        self.y -= other.y
+        self.z -= other.z
+        
+        return self
+   
     
     
     def __mul__(self, scalaire):
         """
         opérateurs de multiplication via un scalaire(nombre)
         """
-        return Point(self.x * scalaire,
-                     self.y * scalaire,
-                     self.z * scalaire)
+        self.x *= scalaire
+        self.y *= scalaire
+        self.z *= scalaire
+        
+        return self
     
     
     def module(self):
