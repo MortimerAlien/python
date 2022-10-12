@@ -15,7 +15,7 @@ def genFibo(nbreUser:int) -> int:
     
     f0 = 0
     f1 = 1
-    stock = []
+    stock = 0
     for i in range(nbreUser):
         f0 = f1
         f1 = stock
@@ -39,4 +39,4 @@ def demanderNombre()->int:
 
 if __name__ == '__main__':
     nbreUser = demanderNombre()
-    print("gen fibo: {}".format(genFibo(nbreUser)))
+    genFibo(nbreUser)
