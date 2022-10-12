@@ -1,15 +1,11 @@
 #!/usr/bin/python3
 
-def suiteSyracuse(n:int)->list[int]:
+def suiteSyracuse(n):
   suite = [n]
   while n > 1:
     if n % 2 == 0:
-      n = n // 2
-      suite.append(n)
+      suite.append(n:= n//2)
     else:
-      n = n * 3 + 1
-      suite.append(n)
+      suite.append(n:=n*3+1)
   return suite
-
-
 print(suiteSyracuse(15))
