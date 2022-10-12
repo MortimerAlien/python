@@ -37,24 +37,7 @@ def creerTableau(longueur:int)->list:
         tabUser.append(demanderNombre())
     return tabUser
 
-
-def reverse(listR:list)->list:
-    """
-    Parameters
-    ----------
-    listR : list
-        listes à reverse.
-
-    Returns
-    -------
-    list
-        liste reverse.
-
-    """
-    return [i for i in listR[::-1]]
         
-
-
 def tri(listeAtrier:list)->list:
     """
     Parameters
@@ -75,7 +58,7 @@ def tri(listeAtrier:list)->list:
                 stock = listeAtrier[j]
                 listeAtrier[j] = listeAtrier[i] 
                 listeAtrier[i] = stock
-    return reverse(listeAtrier)
+    return listeAtrier[::-1]
 
 
 def rechercheDichotomique(listeTrier:list, numberRecherche:int)->list:
